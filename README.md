@@ -4,6 +4,7 @@ This project reads data from a **BME280 sensor** and sends
 1. Temperature
 2. Humidity
 3. Pressure
+   
 to **three Kafka topics**. 
 
 Everything runs via **Docker Compose**, including the Kafka broker and the Python producer.
