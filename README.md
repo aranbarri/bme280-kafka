@@ -18,9 +18,15 @@ cd your-repo
 ```
 
 2. **Connect your BME280 sensor**
+   
     Make sure it’s connected to your host (e.g. Raspberry Pi) via I2C.
 
-3. **Run everything**
+   ![image](https://github.com/user-attachments/assets/0e89b781-31d8-451b-9ad4-a3ed38d7075a)
+
+   ![image](https://github.com/user-attachments/assets/2bb77206-13f8-4d04-8909-c2257a2ed93a)
+
+
+4. **Run everything**
 ```bash
 docker-compose up --build
 ```
