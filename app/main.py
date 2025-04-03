@@ -7,7 +7,7 @@ from bme280pi import Sensor
 
 # Load environment variable
 KAFKA_BOOTSTRAP_SERVERS = os.environ["KAFKA_BOOTSTRAP_SERVERS"]
-SENSOR_WAIT = os.environ["SENSOR_WAIT_SECONDS"]
+SENSOR_WAIT_SECONDS = os.environ["SENSOR_WAIT_SECONDS"]
 
 # Kafka topics
 TOPIC_TEMP = "bme280-temperature"
@@ -16,7 +16,7 @@ TOPIC_PRES = "bme280-pressure"
 
 
 # # Wait for Kafka to be available
-time.sleep(SENSOR_WAIT)
+time.sleep(int(SENSOR_WAIT_SECONDS))
 
 # Initialize BME280 sensor
 sensor = Sensor(address=0x76)
