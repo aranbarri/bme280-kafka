@@ -4,7 +4,7 @@ This project reads data from a **BME280 sensor** and sends temperature, humidity
 
 ## 📦 Topics
 
-Kafka run on 9092.
+Kafka runs on 9092.
 
 - `bme280_temperature`
 - `bme280_humidity`
