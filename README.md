@@ -15,8 +15,8 @@ Kafka runs on 9092.
 1. **Clone the repo**
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/aranbarri/bme280-kafka
+cd bme280-kafka
 ```
 
 2. **Connect your BME280 sensor**
