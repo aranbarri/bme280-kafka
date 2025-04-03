@@ -21,10 +21,11 @@ cd your-repo
     Make sure it’s connected to your host (e.g. Raspberry Pi) via I2C.
 
 3. **Run everything**
-
+```bash
 docker-compose up --build
-
+```
 The Python app will start sending sensor data to Kafka automatically.
+
 🛠️ Notes
 
     Kafka runs in a container on port 9092.
