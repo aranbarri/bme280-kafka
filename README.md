@@ -68,13 +68,14 @@ TOPIC_PRES	Kafka topic name for pressure readings.
 ````
 Default values:
 
+````
 KAFKA_BOOTSTRAP_SERVERS=kafka:9092
 SENSOR_WAIT_SECONDS=30
 MOCK=FALSE
 TOPIC_TEMP=bme280-temperature
 TOPIC_HUM=bme280-humidity
 TOPIC_PRES=bme280-pressure
-
+````
 
 Make sure Kafka is accessible from the address specified in KAFKA_BOOTSTRAP_SERVERS.
 
