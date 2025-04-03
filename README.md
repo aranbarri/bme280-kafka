@@ -1,11 +1,11 @@
-# BME280 to Kafka
+✅ # BME280 to Kafka
 
 This project reads data from a **BME280 sensor** and sends
 1. Temperature
 2. Humidity
 3. Pressure
    
-to **three Kafka topics**. 
+to a **Kafka** broker. 
 
 Everything runs via **Docker Compose**, including the Kafka broker and the Python producer.
 
@@ -46,9 +46,9 @@ docker-compose up --build
 The Python app will start sending sensor data to Kafka automatically.
 You can read from the topics via console-consumer this way:
 ```bash
-kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic bme280_humidity --from-beginning
-kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic bme280_temperature --from-beginning
-kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic bme280_pressure --from-beginning
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic bme280_humidity
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic bme280_temperature
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic bme280_pressure
 
 ````
 
