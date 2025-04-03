@@ -1,76 +1,34 @@
+# BME280 to Kafka
 
+This project reads data from a **BME280 sensor** and sends temperature, humidity, and pressure to **three Kafka topics**. Everything runs via **Docker Compose**, including the Kafka broker and the Python producer.
 
-# BME280 Kafka Data Pipeline
-
-This project streams environmental data from a **BME280 sensor** (temperature, humidity, pressure) to **three separate Kafka topics**. The system is containerized using **Docker Compose**, which includes both the Kafka broker and the Python producer app.
-
-## 🧩 Features
-
-- Reads data from a BME280 sensor.
-- Sends temperature, humidity, and pressure to individual Kafka topics.
-- Kafka broker in KRaft mode included via Docker Compose.
-- Python app auto-starts with Compose.
-
-## 📦 Kafka Topics
+## 📦 Topics
 
 - `bme280_temperature`
 - `bme280_humidity`
 - `bme280_pressure`
 
-Each topic receives one specific type of data from the BME280 sensor.
+## 🚀 Quick Start
 
-## 📁 Project Structure
-
-. ├── docker-compose.yml ├── producer/ │ ├── app.py │ ├── requirements.txt │ └── ... └── README.md
-
-
-## 🚀 Getting Started
-
-### 1. Clone the Repository
+1. **Clone the repo**
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
 ```
-2. Connect the BME280 Sensor
 
-Ensure your BME280 sensor is connected to the host machine (e.g., a Raspberry Pi) and accessible via I2C.
-3. Update Configuration (if needed)
+2. **Connect your BME280 sensor**
+    Make sure it’s connected to your host (e.g. Raspberry Pi) via I2C.
 
-Edit the app.py or environment variables if your sensor is on a different I2C address or you want to change Kafka topics.
-4. Build and Run with Docker Compose
+3. **Run everything**
 
 docker-compose up --build
 
-This will:
+The Python app will start sending sensor data to Kafka automatically.
+🛠️ Notes
 
-    Start the Kafka KRaft broker.
+    Kafka runs in a container on port 9092.
 
-    Start the Python producer that continuously reads from the sensor and pushes data to Kafka.
+    The app requires access to I2C (/dev/i2c-1); add privileges to the container if needed.
 
-5. Verify the Kafka Topics
-
-You can use Kafka tools (e.g., kafka-console-consumer) or a UI like Kafka UI to inspect topic messages.
-
-
-🛠️ Dependencies
-
-The Python app uses:
-
-smbus2 for I2C communication
-bme280pi
-kafka-python
-
-Dependencies are listed in requirements.txt.
-📌 Notes
-
-    This setup assumes the sensor is physically accessible to the host running Docker (e.g., /dev/i2c-1).
-
-    Make sure to give the container appropriate permissions or use --privileged if required.
-
-📜 License
-
-MIT License. See LICENSE file for more information.
-
-
----
+    Python dependencies are in requirements.txt.
