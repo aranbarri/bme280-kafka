@@ -58,13 +58,13 @@ bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic bme280_p
 This project uses environment variables to configure sensor data streaming to Apache Kafka. Below is a description of each variable defined in the .env file:
 
 ````.env
-Variable	               Description
-KAFKA_BOOTSTRAP_SERVERS	Kafka bootstrap server address.
-SENSOR_WAIT_SECONDS	Wait time until the broker is Up.
+Variable	                  Description
+KAFKA_BOOTSTRAP_SERVERS	   Kafka bootstrap server address.
+SENSOR_WAIT_SECONDS	      Wait time until the broker is Up.
 
-TOPIC_TEMP	Kafka topic name for temperature readings.
-TOPIC_HUM	Kafka topic name for humidity readings.
-TOPIC_PRES	Kafka topic name for pressure readings.
+TOPIC_TEMP	               Kafka topic name for temperature readings.
+TOPIC_HUM	               Kafka topic name for humidity readings.
+TOPIC_PRES	               Kafka topic name for pressure readings.
 ````
 Default values:
 
