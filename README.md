@@ -13,10 +13,6 @@ This project reads temperature, humidity, and pressure from a BME280 sensor conn
 
 ---
 
-## 📦 Project Structure
-bme280-influx/ ├── Dockerfile ├── app/ │ ├── main.py │ └── requirements.txt
----
-
 ## 🚀 Running with `docker compose`
 
 Build the Docker Stack:
