@@ -59,7 +59,7 @@ This project uses environment variables to configure sensor data streaming to Ap
 
 ````.env
 Variable	                  Description
-KAFKA_BOOTSTRAP_SERVERS	   Kafka bootstrap server address.
+KAFKA_BOOTSTRAP_SERVERS	     Kafka bootstrap server address.
 SENSOR_WAIT_SECONDS	      Wait time until the broker is Up.
 
 TOPIC_TEMP	               Kafka topic name for temperature readings.
