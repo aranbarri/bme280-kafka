@@ -4,7 +4,7 @@ This project reads temperature, humidity, and pressure from a BME280 sensor conn
 
 ---
 
-## 🧰 Requirements
+##  Requirements
 
 - Raspberry Pi with I2C enabled
 - BME280 sensor connected to I2C
@@ -14,13 +14,10 @@ This project reads temperature, humidity, and pressure from a BME280 sensor conn
 ---
 
 ## 📦 Project Structure
-
 bme280-influx/ ├── Dockerfile ├── app/ │ ├── main.py │ └── requirements.txt
-
-
 ---
 
-## 🚀 Running with `docker run` (manual)
+## 🚀 Running with `docker compose`
 
 Build the Docker Stack:
 
