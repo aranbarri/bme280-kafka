@@ -7,31 +7,17 @@ from bme280pi import Sensor
 
 # Load environment variable
 KAFKA_BOOTSTRAP_SERVERS = os.environ["KAFKA_BOOTSTRAP_SERVERS"]
+SENSOR_WAIT = os.environ["SENSOR_WAIT_SECONDS"]
 
 # Kafka topics
 TOPIC_TEMP = "bme280-temperature"
 TOPIC_HUM = "bme280-humidity"
 TOPIC_PRES = "bme280-pressure"
 
-# # Function to wait until Kafka is ready
-# def wait_for_kafka(bootstrap_servers, timeout=30):
-    # start = time.time()
-    # while True:
-        # try:
-            # print(f"⏳ Waiting for Kafka at {bootstrap_servers}...")
-            # KafkaProducer(bootstrap_servers=bootstrap_servers)
-            # print("✅ Kafka is up!")
-            # break
-        # except NoBrokersAvailable:
-            # if time.time() - start > timeout:
-                # print("❌ Timed out waiting for Kafka.")
-                # exit(1)
-            # time.sleep(2)
 
 # # Wait for Kafka to be available
-# wait_for_kafka(KAFKA_BOOTSTRAP_SERVERS)
+time.sleep(SENSOR_WAIT)
 
-time.sleep(30)
 # Initialize BME280 sensor
 sensor = Sensor(address=0x76)
 
