@@ -51,15 +51,15 @@ This will:
 5. Verify the Kafka Topics
 
 You can use Kafka tools (e.g., kafka-console-consumer) or a UI like Kafka UI to inspect topic messages.
+
+
 🛠️ Dependencies
 
 The Python app uses:
 
-    smbus2 for I2C communication
-
-    Adafruit-BME280 or similar for sensor interfacing
-
-    kafka-python for producing messages
+smbus2 for I2C communication
+bme280pi
+kafka-python
 
 Dependencies are listed in requirements.txt.
 📌 Notes
@@ -74,5 +74,3 @@ MIT License. See LICENSE file for more information.
 
 
 ---
-
-Want to include instructions for how to test the topics or optionally consume data in another
