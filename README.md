@@ -54,8 +54,13 @@ bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic bme280_p
 - https://pypi.org/project/bme280pi/
 
 
+-----------------
+
+
 **Connection Diagram**
 
    ![image](https://github.com/user-attachments/assets/0e89b781-31d8-451b-9ad4-a3ed38d7075a)
 
 ![image](https://github.com/user-attachments/assets/8170dfd1-4143-4864-8c0b-b361f06049c8)
+
+![image](https://github.com/user-attachments/assets/8ebd018b-7754-4dfa-8326-0c8bece102bd)
