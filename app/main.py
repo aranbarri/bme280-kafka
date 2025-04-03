@@ -10,9 +10,9 @@ KAFKA_BOOTSTRAP_SERVERS = os.environ["KAFKA_BOOTSTRAP_SERVERS"]
 SENSOR_WAIT_SECONDS = os.environ["SENSOR_WAIT_SECONDS"]
 
 # Kafka topics
-TOPIC_TEMP = "bme280-temperature"
-TOPIC_HUM = "bme280-humidity"
-TOPIC_PRES = "bme280-pressure"
+TOPIC_TEMP = os.environ["TOPIC_TEMP"]
+TOPIC_HUM = os.environ["TOPIC_HUM"]
+TOPIC_PRES = os.environ["TOPIC_PRES"]
 
 
 # # Wait for Kafka to be available
