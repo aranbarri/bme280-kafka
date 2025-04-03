@@ -54,10 +54,10 @@ bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic bme280_p
 - https://pypi.org/project/bme280pi/
 
 -----------------
-Environment Configuration
+## Environment Configuration
 This project uses environment variables to configure sensor data streaming to Apache Kafka. Below is a description of each variable defined in the .env file:
 
-.env Variables
+````.env
 Variable	Description
 KAFKA_BOOTSTRAP_SERVERS	Kafka bootstrap server address. This is the entry point for the Kafka cluster. Example: kafka:9092.
 SENSOR_WAIT_SECONDS	Time in seconds to wait between sensor readings. Controls data publishing frequency.
@@ -65,22 +65,20 @@ MOCK	Boolean (TRUE or FALSE). When TRUE, the system uses mock sensor data instea
 TOPIC_TEMP	Kafka topic name for temperature readings (e.g., from a BME280 sensor).
 TOPIC_HUM	Kafka topic name for humidity readings.
 TOPIC_PRES	Kafka topic name for pressure readings.
-Example
-env
-Copiar
-Editar
+````
+Default values:
+
 KAFKA_BOOTSTRAP_SERVERS=kafka:9092
 SENSOR_WAIT_SECONDS=30
 MOCK=FALSE
 TOPIC_TEMP=bme280-temperature
 TOPIC_HUM=bme280-humidity
 TOPIC_PRES=bme280-pressure
-Notes
+
+
 Make sure Kafka is accessible from the address specified in KAFKA_BOOTSTRAP_SERVERS.
 
 When using MOCK=TRUE, ensure the application supports mock data generation.
-
-
 
 -----------------
 
