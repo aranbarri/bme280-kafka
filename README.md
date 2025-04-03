@@ -1,6 +1,10 @@
 # BME280 to Kafka
 
-This project reads data from a **BME280 sensor** and sends temperature, humidity, and pressure to **three Kafka topics**. Everything runs via **Docker Compose**, including the Kafka broker and the Python producer.
+This project reads data from a **BME280 sensor** and sends temperature, humidity, and pressure to **three Kafka topics**. 
+
+Everything runs via **Docker Compose**, including the Kafka broker and the Python producer.
+
+No Zookeeper required. Kafka in KRaft mode. Just clone, compose up and check logs!
 
 ## 📦 Topics
 
