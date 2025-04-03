@@ -31,7 +31,7 @@ cd bme280-kafka
 
    ![image](https://github.com/user-attachments/assets/0e89b781-31d8-451b-9ad4-a3ed38d7075a)
 
-   ![image](https://github.com/user-attachments/assets/2bb77206-13f8-4d04-8909-c2257a2ed93a)
+![image](https://github.com/user-attachments/assets/8170dfd1-4143-4864-8c0b-b361f06049c8)
 
 
 4. **Run everything**
