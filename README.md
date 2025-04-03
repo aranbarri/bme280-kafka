@@ -8,7 +8,7 @@ This project streams environmental data from a **BME280 sensor** (temperature, h
 
 - Reads data from a BME280 sensor.
 - Sends temperature, humidity, and pressure to individual Kafka topics.
-- Kafka broker and Zookeeper included via Docker Compose.
+- Kafka broker in KRaft mode included via Docker Compose.
 - Python app auto-starts with Compose.
 
 ## 📦 Kafka Topics
@@ -31,7 +31,7 @@ Each topic receives one specific type of data from the BME280 sensor.
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
-
+```
 2. Connect the BME280 Sensor
 
 Ensure your BME280 sensor is connected to the host machine (e.g., a Raspberry Pi) and accessible via I2C.
@@ -44,7 +44,7 @@ docker-compose up --build
 
 This will:
 
-    Start Zookeeper and Kafka broker.
+    Start the Kafka KRaft broker.
 
     Start the Python producer that continuously reads from the sensor and pushes data to Kafka.
 
