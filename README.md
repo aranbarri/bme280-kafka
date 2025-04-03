@@ -10,7 +10,7 @@ Just clone, build and check the kafka topics!
 
 ## 📦 Topics
 
-Kafka runs on 9092.
+Kafka exports the port on 9092.
 
 - `bme280_temperature`
 - `bme280_humidity`
