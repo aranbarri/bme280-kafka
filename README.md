@@ -13,7 +13,7 @@ Just clone, build and check the kafka topics!
 
 ## 📦 Topics
 
-Kafka exports the port on 9092.
+Default values. Can be modified in the .env file
 
 - `bme280_temperature`
 - `bme280_humidity`
