@@ -61,8 +61,10 @@ This project uses environment variables to configure sensor data streaming to Ap
 Variable	Description
 KAFKA_BOOTSTRAP_SERVERS	Kafka bootstrap server address. This is the entry point for the Kafka cluster. Example: kafka:9092.
 SENSOR_WAIT_SECONDS	Time in seconds to wait between sensor readings. Controls data publishing frequency.
-MOCK	Boolean (TRUE or FALSE). When TRUE, the system uses mock sensor data instead of reading from real sensors.
-TOPIC_TEMP	Kafka topic name for temperature readings (e.g., from a BME280 sensor).
+
+MOCK     	Boolean (TRUE or FALSE). When TRUE, the system uses mock sensor data instead of reading from real sensors.
+
+TOPIC_TEMP	Kafka topic name for temperature readings.
 TOPIC_HUM	Kafka topic name for humidity readings.
 TOPIC_PRES	Kafka topic name for pressure readings.
 ````
