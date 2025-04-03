@@ -36,8 +36,6 @@ The Python app will start sending sensor data to Kafka automatically.
 
 🛠️ Notes
 
-    Kafka runs in a container on port 9092.
-
-    The app requires access to I2C (/dev/i2c-1); add privileges to the container if needed.
-
-    Python dependencies are in requirements.txt.
+- Kafka runs in a container on port 9092.
+- The app requires access to I2C (/dev/i2c-1); add privileges to the container if needed.
+- Python dependencies are in requirements.txt.
