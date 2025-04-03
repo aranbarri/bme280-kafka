@@ -1,4 +1,3 @@
-✅ 
 ## BME280 to Kafka ##
 
 This project reads data from a **BME280 sensor** and sends
