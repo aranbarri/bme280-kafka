@@ -39,7 +39,7 @@ cd bme280-kafka
 docker-compose up --build
 ```
 -------------
-The Python app will start sending sensor data to Kafka automatically.
+The Python app will start sending sensor data to Kafka each second automatically.
 You can read from the topics via console-consumer this way:
 ```bash
 bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic bme280_humidity
