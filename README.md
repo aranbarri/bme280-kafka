@@ -1,6 +1,6 @@
 ## Raspberry Pi - BME280 to Kafka ##
 
-This project reads data from a **BME280 sensor** and sends Temperature, Humidity and Pressure data to a **Kafka** broker. 
+This project reads data from a **BME280 sensor** and sends Temperature, Humidity and Pressure data to an ephemeral **Kafka** broker. 
 
 Everything runs via **Docker Compose**, including the Kafka broker and the Python producer.
 
@@ -10,6 +10,7 @@ Just clone, build and check the kafka topics!
 
 ![image](https://github.com/user-attachments/assets/6673e73c-f573-46cb-92ba-cb101d6dbfd6)
 
+You can also modify the docker-compose file so it mounts a volume for log persistence.
 
 ## 📦 Topics
 
