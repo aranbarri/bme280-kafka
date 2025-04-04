@@ -38,6 +38,7 @@ cd bme280-kafka
 ```bash
 docker-compose up --build
 ```
+-------------
 The Python app will start sending sensor data to Kafka automatically.
 You can read from the topics via console-consumer this way:
 ```bash
