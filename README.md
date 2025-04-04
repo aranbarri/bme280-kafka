@@ -42,9 +42,9 @@ docker-compose up --build
 The Python app will start sending sensor data to Kafka each second automatically.
 You can read from the topics via console-consumer this way:
 ```bash
-bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic bme280_humidity
-bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic bme280_temperature
-bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic bme280_pressure
+bin/kafka-console-consumer.sh --bootstrap-server <kafkabroker>:<port> --topic bme280_humidity
+bin/kafka-console-consumer.sh --bootstrap-server <kafkabroker>:<port> --topic bme280_temperature
+bin/kafka-console-consumer.sh --bootstrap-server <kafkabroker>:<port> --topic bme280_pressure
 
 ````
 
