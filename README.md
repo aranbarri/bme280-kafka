@@ -6,11 +6,11 @@ Everything runs via **Docker Compose**, including the Kafka broker and the Pytho
 
 No Zookeeper required. 
 
-Just clone, build and check the kafka topics!
+*Just clone, build and check the Kafka topics!*
 
 ![image](https://github.com/user-attachments/assets/6673e73c-f573-46cb-92ba-cb101d6dbfd6)
 
-You can also modify the docker-compose file so it mounts a volume for log persistence.
+You can also modify the docker-compose file so it mounts a volume for Kafka persistence.
 
 ## 📦 Topics
 
