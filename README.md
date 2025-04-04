@@ -31,7 +31,7 @@ cd bme280-kafka
 
 2. **Connect your BME280 sensor**
    
-    Make sure it’s connected to your host (e.g. Raspberry Pi) via I2C.
+ *Make sure it’s connected to your host (e.g. Raspberry Pi) via I2C.*
 
 
 3. **Run everything**
