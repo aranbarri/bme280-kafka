@@ -4,7 +4,7 @@ This project reads data from a **BME280 sensor** and sends Temperature, Humidity
 
 Everything runs via **Docker Compose**, including the Kafka broker and the Python producer.
 
-No Zookeeper required. 
+No Zookeeper required, Kafka in Kraft mode.
 
 *Just clone, build and check the Kafka topics!*
 
