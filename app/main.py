@@ -5,17 +5,15 @@ from kafka import KafkaProducer
 from kafka.errors import NoBrokersAvailable
 from bme280pi import Sensor
 
-# Load environment variable
+# ENV VARS
 KAFKA_BOOTSTRAP_SERVERS = os.environ["KAFKA_BOOTSTRAP_SERVERS"]
 SENSOR_WAIT_SECONDS = os.environ["SENSOR_WAIT_SECONDS"]
 
-# Kafka topics
 TOPIC_TEMP = os.environ["TOPIC_TEMP"]
 TOPIC_HUM = os.environ["TOPIC_HUM"]
 TOPIC_PRES = os.environ["TOPIC_PRES"]
 
-
-# # Wait for Kafka to be available
+# # Wait for Kafka to be completely started and available
 time.sleep(int(SENSOR_WAIT_SECONDS))
 
 # Initialize BME280 sensor
