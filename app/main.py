@@ -8,6 +8,7 @@ from bme280pi import Sensor
 # ENV VARS
 KAFKA_BOOTSTRAP_SERVERS = os.environ["KAFKA_BOOTSTRAP_SERVERS"]
 SENSOR_WAIT_SECONDS = os.environ["SENSOR_WAIT_SECONDS"]
+SENSOR_PERIOD_SECONDS =  os.environ["SENSOR_PERIOD_SECONDS"]
 
 TOPIC_TEMP = os.environ["TOPIC_TEMP"]
 TOPIC_HUM = os.environ["TOPIC_HUM"]
@@ -40,4 +41,4 @@ while True:
     except Exception as e:
         print(f"[ERROR] {e}")
 
-    time.sleep(1)
+    time.sleep(int(SENSOR_PERIOD_SECONDS))
