@@ -38,14 +38,13 @@ cd bme280-kafka
 ```bash
 docker-compose up --build
 ```
--------------
+
 The Python app will start sending sensor data to Kafka each second automatically.
  -  Check if Kafka in running:
     ![image](https://github.com/user-attachments/assets/1522efcb-1820-440e-a4f5-110147d8c374)
  -  Verbose mode will print all values in the console:
     ![image](https://github.com/user-attachments/assets/b6e70445-9fde-4642-b406-d15cc329e9a8)
 
--------------
 
 You can read from the topics via console-consumer this way:
 ```bash
@@ -54,7 +53,7 @@ bin/kafka-console-consumer.sh --bootstrap-server <kafkabroker>:<port> --topic bm
 bin/kafka-console-consumer.sh --bootstrap-server <kafkabroker>:<port> --topic bme280_pressure
 ````
 Output example:
-![image](https://github.com/user-attachments/assets/196b6afe-516f-46e3-8211-206590305b0c)
+  ![image](https://github.com/user-attachments/assets/196b6afe-516f-46e3-8211-206590305b0c)
 
 
 4. **Stop everything**
@@ -62,6 +61,7 @@ Output example:
 docker-compose down -v
 ```
 
+-------------
 
 🛠️ Notes
 
