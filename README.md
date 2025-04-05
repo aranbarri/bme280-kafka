@@ -16,9 +16,9 @@ You can also modify the docker-compose file so it mounts a volume for Kafka pers
 
 Default values. Can be modified in the .env file
 
-- `bme280_temperature`
-- `bme280_humidity`
-- `bme280_pressure`
+- `bme280-temperature`
+- `bme280-humidity`
+- `bme280-pressure`
 
 ## 🚀 Quick Start
 
@@ -49,9 +49,9 @@ The Python app will start sending sensor data to Kafka each second automatically
 
     ![image](https://github.com/user-attachments/assets/196b6afe-516f-46e3-8211-206590305b0c)
       ```bash
-      bin/kafka-console-consumer.sh --bootstrap-server <kafkabroker>:<port> --topic bme280_humidity
-      bin/kafka-console-consumer.sh --bootstrap-server <kafkabroker>:<port> --topic bme280_temperature
-      bin/kafka-console-consumer.sh --bootstrap-server <kafkabroker>:<port> --topic bme280_pressure
+      bin/kafka-console-consumer.sh --bootstrap-server <kafkabroker>:<port> --topic bme280-humidity
+      bin/kafka-console-consumer.sh --bootstrap-server <kafkabroker>:<port> --topic bme280-temperature
+      bin/kafka-console-consumer.sh --bootstrap-server <kafkabroker>:<port> --topic bme280-pressure
       ````
   
 ## 4.  Stop everything ##
