@@ -73,7 +73,7 @@ docker-compose down -v
 This project uses environment variables to configure sensor data streaming to Apache Kafka. Below is a description of each variable defined in the .env file:
 
 ````.env
-Variable	                Description
+Variable	              Description
 KAFKA_BOOTSTRAP_SERVERS	      Kafka bootstrap server address.
 SENSOR_WAIT_SECONDS	      Wait time until the broker is Up.
 
