@@ -48,11 +48,11 @@ The Python app will start sending sensor data to Kafka each second automatically
  -  You can read from the topics via console-consumer (*Humidity topic example output*):
 
     ![image](https://github.com/user-attachments/assets/196b6afe-516f-46e3-8211-206590305b0c)
-   ```bash
-   bin/kafka-console-consumer.sh --bootstrap-server <kafkabroker>:<port> --topic bme280_humidity
-   bin/kafka-console-consumer.sh --bootstrap-server <kafkabroker>:<port> --topic bme280_temperature
-   bin/kafka-console-consumer.sh --bootstrap-server <kafkabroker>:<port> --topic bme280_pressure
-   ````
+      ```bash
+      bin/kafka-console-consumer.sh --bootstrap-server <kafkabroker>:<port> --topic bme280_humidity
+      bin/kafka-console-consumer.sh --bootstrap-server <kafkabroker>:<port> --topic bme280_temperature
+      bin/kafka-console-consumer.sh --bootstrap-server <kafkabroker>:<port> --topic bme280_pressure
+      ````
   
 ## 4.  Stop everything ##
 ```bash
