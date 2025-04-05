@@ -22,19 +22,19 @@ Default values. Can be modified in the .env file
 
 ## 🚀 Quick Start
 
-1. ## Clone the repo ##
+## 1.  Clone the repo ##
 
 ```bash
 git clone https://github.com/aranbarri/bme280-kafka
 cd bme280-kafka
 ```
 
-2. ## Connect your BME280 sensor ##
+## 2.  Connect your BME280 sensor ##
    
  *Make sure it’s connected to your host (e.g. Raspberry Pi) via I2C.*
 
 
-3. ## Run everything ##
+## 3.  Run everything ##
 
 ```bash
 docker-compose up --build
@@ -54,7 +54,7 @@ The Python app will start sending sensor data to Kafka each second automatically
    bin/kafka-console-consumer.sh --bootstrap-server <kafkabroker>:<port> --topic bme280_pressure
    ````
   
-4. ## Stop everything ##
+## 4.  Stop everything ##
 ```bash
 docker-compose down -v
 ```
