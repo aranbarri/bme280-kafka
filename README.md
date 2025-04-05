@@ -40,7 +40,7 @@ cd bme280-kafka
 docker-compose up --build
 ```
 
-The Python app will start sending sensor data to Kafka each second automatically. You should see the following logs in console.
+The Python app will start sending sensor data to Kafka each SENSOR_PERIOD_SECONDS automatically. You should see the following logs in console.
  -  Check if Kafka in running:
     ![image](https://github.com/user-attachments/assets/1522efcb-1820-440e-a4f5-110147d8c374)
  -  Verbose mode will print all values in the console:
