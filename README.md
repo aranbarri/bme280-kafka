@@ -76,7 +76,7 @@ This project uses environment variables to configure sensor data streaming to Ap
 Variable	              Description
 KAFKA_BOOTSTRAP_SERVERS	      Kafka bootstrap server address.
 SENSOR_WAIT_SECONDS	      Wait time until the broker is Up.
-
+SENSOR_PERIOD_SECONDS      Time between sensor reads. Default: 1 second
 TOPIC_TEMP	              Kafka topic name for temperature readings.
 TOPIC_HUM	              Kafka topic name for humidity readings.
 TOPIC_PRES	              Kafka topic name for pressure readings.
@@ -86,6 +86,7 @@ Default values:
 ````
 KAFKA_BOOTSTRAP_SERVERS=kafka:9092
 SENSOR_WAIT_SECONDS=30
+SENSOR_PERIOD_SECONDS=1
 MOCK=FALSE
 TOPIC_TEMP=bme280-temperature
 TOPIC_HUM=bme280-humidity
