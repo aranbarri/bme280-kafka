@@ -22,19 +22,20 @@ Default values. Can be modified in the .env file
 
 ## 🚀 Quick Start
 
-1. **Clone the repo**
+1. # Clone the repo #
 
 ```bash
 git clone https://github.com/aranbarri/bme280-kafka
 cd bme280-kafka
 ```
 
-2. **Connect your BME280 sensor**
+2. # Connect your BME280 sensor #
    
  *Make sure it’s connected to your host (e.g. Raspberry Pi) via I2C.*
 
 
-3. **Run everything**
+3. # Run everything #
+
 ```bash
 docker-compose up --build
 ```
@@ -45,22 +46,23 @@ The Python app will start sending sensor data to Kafka each second automatically
  -  Verbose mode will print all values in the console:
     ![image](https://github.com/user-attachments/assets/5cdcd7bd-1cd9-4a60-b210-8039055d2227)
 
- -  You can read from the topics via console-consumer this way:
+ -  You can read from the topics via console-consumer:
+    ![image](https://github.com/user-attachments/assets/196b6afe-516f-46e3-8211-206590305b0c)
    ```bash
    bin/kafka-console-consumer.sh --bootstrap-server <kafkabroker>:<port> --topic bme280_humidity
    bin/kafka-console-consumer.sh --bootstrap-server <kafkabroker>:<port> --topic bme280_temperature
    bin/kafka-console-consumer.sh --bootstrap-server <kafkabroker>:<port> --topic bme280_pressure
    ````
-   ![image](https://github.com/user-attachments/assets/196b6afe-516f-46e3-8211-206590305b0c)
 
-4. **Stop everything**
+  
+4. # Stop everything #
 ```bash
 docker-compose down -v
 ```
 
 -------------
 
-🛠️ Notes
+🛠️ **Notes**
 
 - Kafka runs in a container on port 9092.
 - The app requires access to I2C (/dev/i2c-1); add privileges to the container if needed.
