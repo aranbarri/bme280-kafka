@@ -46,7 +46,6 @@ The Python app will start sending sensor data to Kafka each second automatically
  -  Verbose mode will print all values in the console:
     ![image](https://github.com/user-attachments/assets/5cdcd7bd-1cd9-4a60-b210-8039055d2227)
  -  You can read from the topics via console-consumer:
-
     ![image](https://github.com/user-attachments/assets/196b6afe-516f-46e3-8211-206590305b0c)
    ```bash
    bin/kafka-console-consumer.sh --bootstrap-server <kafkabroker>:<port> --topic bme280_humidity
