@@ -37,7 +37,7 @@ cd bme280-kafka
 ## 3.  Run everything ##
 
 ```bash
-docker-compose up --build
+docker-compose up -d
 ```
 
 The Python app will start sending sensor data to Kafka each SENSOR_PERIOD_SECONDS automatically. You should see the following logs in console.
